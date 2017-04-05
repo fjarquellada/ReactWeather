@@ -78,3 +78,10 @@ npm install react-router@2.0.0 --save
 
 #Libreria para llamadas Ajax axios
 npm install axios --save
+
+#comandos git
+git init
+git status
+git add .
+git commmit -m 'message'
+git commit -a -m 'message'
