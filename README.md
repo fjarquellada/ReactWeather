@@ -84,4 +84,24 @@ git init
 git status
 git add .
 git commmit -m 'message'
+#para comitear ficheros que ya están en git, pero que han sido modificados.
 git commit -a -m 'message'
+
+#Crear clave ssh para GitHub
+#Se mira si hay alguna ssh key en el directorio .ssh
+ls -al ~/.ssh 
+#comando para crear la llave
+ssh-keygen -t rsa -b 4096 -C 'fj.arquellada@gmail.com'
+#
+eval "$(ssh-agent -s)"
+#comprobación si se ha creado
+ls -al ~/.ssh
+#Añadir la clave creada
+ssh-add ~/.ssh/id_rsa
+
+#Comando para mostrar la clave:
+more ~/.ssh/id_rsa.pub
+#se copia y se pega en Github settings SSH and GPG keys
+
+#para probar la conexión con github se ejecuta el siguiente comando
+ssh -T git@github.com
