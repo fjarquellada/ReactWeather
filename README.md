@@ -105,3 +105,21 @@ more ~/.ssh/id_rsa.pub
 
 #para probar la conexión con github se ejecuta el siguiente comando
 ssh -T git@github.com
+
+#####################
+###### HEROKU #######
+#####################
+#instalar las tools de heroku
+brew install heroku
+#login
+$heroku login
+#Crear aplicaicón en heroku
+$ heroku create
+Creating app... done, ⬢ fierce-springs-71844
+https://fierce-springs-71844.herokuapp.com/ | https://git.heroku.com/fierce-springs-71844.git
+#Verificar rutas de repositorios
+$ git remote -v
+heroku	https://git.heroku.com/fierce-springs-71844.git (fetch)
+heroku	https://git.heroku.com/fierce-springs-71844.git (push)
+origin	https://github.com/fjarquellada/ReactWeather.git (fetch)
+origin	https://github.com/fjarquellada/ReactWeather.git (push)
