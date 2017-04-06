@@ -117,9 +117,16 @@ $heroku login
 $ heroku create
 Creating app... done, ⬢ fierce-springs-71844
 https://fierce-springs-71844.herokuapp.com/ | https://git.heroku.com/fierce-springs-71844.git
-#Verificar rutas de repositorios
+#Verificar rutas de repositorios 
 $ git remote -v
 heroku	https://git.heroku.com/fierce-springs-71844.git (fetch)
 heroku	https://git.heroku.com/fierce-springs-71844.git (push)
 origin	https://github.com/fjarquellada/ReactWeather.git (fetch)
 origin	https://github.com/fjarquellada/ReactWeather.git (push)
+#Subir aplicación a Heroku
+$ git push heroku master
+#Después de hacer cambios en el código para subirlos a heroku
+$ webpack #crea el nuevo fichero builder.js
+$ git commit -a -m 'Mensage' # commit de los cambios
+$ git push origin master #sube a GitHub
+$ git push heroku master #sube a Heroku provocando recarga de app
