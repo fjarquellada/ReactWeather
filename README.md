@@ -130,3 +130,9 @@ $ webpack #crea el nuevo fichero builder.js
 $ git commit -a -m 'Mensage' # commit de los cambios
 $ git push origin master #sube a GitHub
 $ git push heroku master #sube a Heroku provocando recarga de app
+
+#############################
+####### FUNDATION ###########
+#############################
+$ npm install css-loader@0.23.1 script-loader@0.6.1 \
+style-loader@0.13.0 jquery@2.2.1 foundation-sites@6.2.0 --save-dev
