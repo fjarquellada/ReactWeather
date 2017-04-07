@@ -11,7 +11,7 @@ var React = require('react');
 var About = (props)=>{
      return(
              <div>
-                <h1 className="text-center">About</h1>
+                <h1 className="text-center page-title">About</h1>
                 <p>Esta es una aplicación creada con React para consultar el tiempo.</p>
                 <p>Aquí algunas de las herramientas usadas:</p>
                 <ul>

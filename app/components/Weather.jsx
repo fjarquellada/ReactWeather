@@ -21,8 +21,7 @@ var Weather = React.createClass({
             _this.setState({
                 location: location,
                 temp: parseInt(temp -53),
-                isLoading: false,
-                errorMessage: undefined
+                isLoading: false
             });
         }, function(errorMessage){
             console.log("error mesg: ", errorMessage);
@@ -52,7 +51,7 @@ var Weather = React.createClass({
         }
         return(
             <div>
-                <h1 className="text-center">Obtener el Tiempo</h1>
+                <h1 className="text-center page-title">Obtener el Tiempo</h1>
                 <WeatherForm onSearch={this.handleSearch} />
                 {renderMessage()}
                 {renderErrorMessage()}
