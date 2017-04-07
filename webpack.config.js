@@ -1,9 +1,10 @@
 var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
     entry: [
-        'script!jquery/dist/jquery.min.js',
-        'script!foundation-sites/dist/js/foundation.min.js',
+        'script-loader!jquery/dist/jquery.min.js',
+        'script-loader!foundation-sites/dist/js/foundation.min.js',
         './app/app.jsx'
     ],
     externals:{
@@ -11,8 +12,9 @@ module.exports = {
     },
     plugins:[
         new webpack.ProvidePlugin({
-            '$': 'jquery',
-            'jQuery': 'jquery'
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
         })
     ],
     output: {
@@ -20,21 +22,24 @@ module.exports = {
         filename: './public/bundle.js'
     },
     resolve: {
-        root: __dirname,
+        modules:[
+            path.resolve(__dirname, 'node_modules'),
+            path.join(__dirname)  
+        ],
         alias:{
-            Main:           'app/components/Main.jsx',
-            Nav:            'app/components/Nav.jsx',
-            Weather:        'app/components/Weather.jsx',
-            About:          'app/components/About.jsx',
-            Examples:       'app/components/Examples.jsx',
-            WeatherForm:    'app/components/WeatherForm.jsx',
-            WeatherMessage: 'app/components/WeatherMessage.jsx',
-            ErrorModal:     'app/components/ErrorModal.jsx',
-            OpenWeatherMap: 'app/api/OpenWeatherMap.jsx',
-            applicationStyles: 'app/styles/app.css'
+            Main:               path.resolve(__dirname, 'app/components/Main.jsx'),
+            Nav:                path.resolve(__dirname, 'app/components/Nav.jsx'),
+            Weather:            path.resolve(__dirname, 'app/components/Weather.jsx'),
+            About:              path.resolve(   __dirname, 'app/components/About.jsx'),
+            Examples:           path.resolve(__dirname, 'app/components/Examples.jsx'),
+            WeatherForm:        path.resolve(__dirname, 'app/components/WeatherForm.jsx'),
+            WeatherMessage:     path.resolve(__dirname, 'app/components/WeatherMessage.jsx'),
+            ErrorModal:         path.resolve(__dirname, 'app/components/ErrorModal.jsx'),
+            OpenWeatherMap:     path.resolve(__dirname, 'app/api/OpenWeatherMap.jsx'),
+            applicationStyles:  path.resolve(__dirname, 'app/styles/app.scss')
             
         },
-        extensions: ['', '.js', '.jsx']
+        extensions: ['.js', '.jsx']
     },
     module: {
         loaders: [

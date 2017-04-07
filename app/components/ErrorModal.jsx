@@ -1,4 +1,4 @@
-var React = require('react');
+import React from 'react';
 
 var ErrorModal = React.createClass({
     getDefaultProps: function(){

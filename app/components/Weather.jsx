@@ -1,8 +1,8 @@
-var React           = require('react');
-var WeatherForm     = require('WeatherForm');
-var WeatherMessage  = require('WeatherMessage');
-var OpenWeatherMap  = require('OpenWeatherMap');
-var ErrorModal      = require('ErrorModal');
+import React from 'react';
+import WeatherForm from 'WeatherForm';
+import WeatherMessage  from 'WeatherMessage';
+import OpenWeatherMap  from 'OpenWeatherMap';
+import ErrorModal      from 'ErrorModal';
 
 var Weather = React.createClass({
     getInitialState: function(){
