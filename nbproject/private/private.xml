@@ -4,14 +4,13 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/Volumes/SERVER/CURSOS/The%20Complete%20React%20Web%20App%20Developer%20Course/workspace/ReactWeather/app/components/Nav.jsx</file>
-            <file>file:/Volumes/SERVER/CURSOS/The%20Complete%20React%20Web%20App%20Developer%20Course/workspace/ReactWeather/.gitignore</file>
             <file>file:/Volumes/SERVER/CURSOS/The%20Complete%20React%20Web%20App%20Developer%20Course/workspace/ReactWeather/app/components/About.jsx</file>
-            <file>file:/Volumes/SERVER/CURSOS/The%20Complete%20React%20Web%20App%20Developer%20Course/workspace/ReactWeather/example-arrow-functions.js</file>
+            <file>file:/Volumes/SERVER/CURSOS/The%20Complete%20React%20Web%20App%20Developer%20Course/workspace/ReactWeather/app/styles/app.scss</file>
+            <file>file:/Volumes/SERVER/CURSOS/The%20Complete%20React%20Web%20App%20Developer%20Course/workspace/ReactWeather/app/components/WeatherForm.jsx</file>
             <file>file:/Volumes/SERVER/CURSOS/The%20Complete%20React%20Web%20App%20Developer%20Course/workspace/ReactWeather/webpack.config.js</file>
             <file>file:/Volumes/SERVER/CURSOS/The%20Complete%20React%20Web%20App%20Developer%20Course/workspace/ReactWeather/app/components/Examples.jsx</file>
-            <file>file:/Volumes/SERVER/CURSOS/The%20Complete%20React%20Web%20App%20Developer%20Course/workspace/ReactWeather/app/components/Main.jsx</file>
-            <file>file:/Volumes/SERVER/CURSOS/The%20Complete%20React%20Web%20App%20Developer%20Course/workspace/ReactWeather/app/app.jsx</file>
             <file>file:/Volumes/SERVER/CURSOS/The%20Complete%20React%20Web%20App%20Developer%20Course/workspace/ReactWeather/app/components/Weather.jsx</file>
+            <file>file:/Volumes/SERVER/CURSOS/The%20Complete%20React%20Web%20App%20Developer%20Course/workspace/ReactWeather/app/components/ErrorModal.jsx</file>
             <file>file:/Volumes/SERVER/CURSOS/The%20Complete%20React%20Web%20App%20Developer%20Course/workspace/ReactWeather/README.md</file>
         </group>
     </open-files>
